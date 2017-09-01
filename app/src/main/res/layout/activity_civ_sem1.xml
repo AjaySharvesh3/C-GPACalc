@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.raja.c_gpacalc.CivSem1">
+
+
+    <TextView
+        android:id="@+id/Semester1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="SEMESTER 1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Semester1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:text="Subject Code"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Code"
+        android:layout_alignBottom="@+id/Code"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/Code"
+        android:layout_toRightOf="@+id/Code"
+        android:text="Subject Name"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/credits"
+        android:layout_toRightOf="@+id/credits"
+        android:text="Grades"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/grades"
+        android:layout_alignBottom="@+id/grades"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/Semester1"
+        android:layout_toRightOf="@+id/Semester1"
+        android:text="Credits"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/HS6151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Code"
+        android:layout_alignStart="@+id/Code"
+        android:layout_below="@+id/Code"
+        android:layout_marginTop="18dp"
+        android:text="HS6151"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subcsem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_alignTop="@+id/HS6151"
+        android:text="Technical English I"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/MA6151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/HS6151"
+        android:layout_alignStart="@+id/HS6151"
+        android:layout_below="@+id/HS6151"
+        android:layout_marginTop="21dp"
+        android:text="MA6151"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub2csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MA6151"
+        android:layout_alignBottom="@+id/MA6151"
+        android:layout_alignLeft="@+id/subcsem1"
+        android:layout_alignStart="@+id/subcsem1"
+        android:text="Mathematics I"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PH6151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MA6151"
+        android:layout_alignStart="@+id/MA6151"
+        android:layout_below="@+id/MA6151"
+        android:layout_marginTop="21dp"
+        android:text="PH6151"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub3csem1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PH6151"
+        android:layout_alignBottom="@+id/PH6151"
+        android:layout_alignLeft="@+id/sub2csem1"
+        android:layout_alignStart="@+id/sub2csem1"
+        android:text="Engineering Physics I"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CY6151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/PH6151"
+        android:layout_alignRight="@+id/PH6151"
+        android:layout_below="@+id/sub3csem1"
+        android:layout_marginTop="18dp"
+        android:text="CY6151"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub4csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CY6151"
+        android:layout_alignBottom="@+id/CY6151"
+        android:layout_alignLeft="@+id/sub3csem1"
+        android:layout_alignStart="@+id/sub3csem1"
+        android:text="Engineering Chemistry I"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GE6151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/CY6151"
+        android:layout_alignRight="@+id/CY6151"
+        android:layout_below="@+id/sub3csem1"
+        android:layout_marginTop="61dp"
+        android:text="GE6151"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub5csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sub4csem1"
+        android:layout_alignStart="@+id/sub4csem1"
+        android:layout_alignTop="@+id/GE6151"
+        android:text="Computer Programming"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GE6152"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/MA6151"
+        android:layout_alignRight="@+id/MA6151"
+        android:layout_below="@+id/sub5csem1"
+        android:layout_marginTop="16dp"
+        android:text="GE6152"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub6csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GE6152"
+        android:layout_alignBottom="@+id/GE6152"
+        android:layout_alignLeft="@+id/sub5csem1"
+        android:layout_alignStart="@+id/sub5csem1"
+        android:text="Engineering Graphics"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GE6161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GE6152"
+        android:layout_alignStart="@+id/GE6152"
+        android:layout_below="@+id/GE6152"
+        android:layout_marginTop="25dp"
+        android:text="GE6161"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub7csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sub6csem1"
+        android:layout_alignStart="@+id/sub6csem1"
+        android:layout_alignTop="@+id/GE6161"
+        android:text="Computer Practices Laboratory"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GE6162"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GE6161"
+        android:layout_alignStart="@+id/GE6161"
+        android:layout_below="@+id/sub7csem1"
+        android:layout_marginTop="17dp"
+        android:text="GE6162"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sub8csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GE6162"
+        android:layout_alignBottom="@+id/GE6162"
+        android:layout_alignLeft="@+id/sub7csem1"
+        android:layout_alignStart="@+id/sub7csem1"
+        android:text="Engineering Practices Laboratory"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GE6163"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="GE6163"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sub8csem1"
+        android:layout_alignLeft="@+id/GE6162"
+        android:layout_alignStart="@+id/GE6162" />
+
+    <TextView
+        android:id="@+id/sub9csem1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sub8csem1"
+        android:layout_alignStart="@+id/sub8csem1"
+        android:layout_alignTop="@+id/c9"
+        android:text="Physics and Chemistry Laboratory"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/sub9csem1"
+        android:layout_alignLeft="@+id/PH6151"
+        android:layout_alignStart="@+id/PH6151" />
+
+    <TextView
+        android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/c1"
+        android:layout_alignRight="@+id/c1"
+        android:layout_alignTop="@+id/sub2csem1"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subcsem1"
+        android:layout_alignBottom="@+id/subcsem1"
+        android:layout_alignEnd="@+id/credits"
+        android:layout_alignRight="@+id/credits"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub3csem1"
+        android:layout_alignBottom="@+id/sub3csem1"
+        android:layout_alignEnd="@+id/c2"
+        android:layout_alignRight="@+id/c2"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub4csem1"
+        android:layout_alignBottom="@+id/sub4csem1"
+        android:layout_alignLeft="@+id/c3"
+        android:layout_alignStart="@+id/c3"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub5csem1"
+        android:layout_alignBottom="@+id/sub5csem1"
+        android:layout_alignLeft="@+id/c4"
+        android:layout_alignStart="@+id/c4"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub6csem1"
+        android:layout_alignBottom="@+id/sub6csem1"
+        android:layout_alignLeft="@+id/c2"
+        android:layout_alignStart="@+id/c2"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub7csem1"
+        android:layout_alignBottom="@+id/sub7csem1"
+        android:layout_alignEnd="@+id/c5"
+        android:layout_alignRight="@+id/c5"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub8csem1"
+        android:layout_alignBottom="@+id/sub8csem1"
+        android:layout_alignLeft="@+id/c7"
+        android:layout_alignStart="@+id/c7"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/c9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/GE6163"
+        android:layout_alignLeft="@+id/c8"
+        android:layout_alignStart="@+id/c8"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g2"
+        android:layout_alignLeft="@+id/grades"
+        android:layout_alignStart="@+id/grades"
+        android:layout_alignTop="@+id/c1"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g3"
+        android:layout_alignEnd="@+id/g1"
+        android:layout_alignLeft="@+id/g1"
+        android:layout_alignRight="@+id/g1"
+        android:layout_alignStart="@+id/g1"
+        android:layout_alignTop="@+id/c2"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g4"
+        android:layout_alignEnd="@+id/g2"
+        android:layout_alignLeft="@+id/g2"
+        android:layout_alignRight="@+id/g2"
+        android:layout_alignStart="@+id/g2"
+        android:layout_alignTop="@+id/c3"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g5"
+        android:layout_alignEnd="@+id/g3"
+        android:layout_alignLeft="@+id/g3"
+        android:layout_alignRight="@+id/g3"
+        android:layout_alignStart="@+id/g3"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g7"
+        android:layout_alignEnd="@+id/g4"
+        android:layout_alignLeft="@+id/g4"
+        android:layout_alignRight="@+id/g4"
+        android:layout_alignStart="@+id/g4"
+        android:layout_alignTop="@+id/c5"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g6"
+        android:layout_alignEnd="@+id/g6"
+        android:layout_alignLeft="@+id/g6"
+        android:layout_alignRight="@+id/g6"
+        android:layout_alignStart="@+id/g6"
+        android:layout_alignTop="@+id/sub5csem1"
+        android:ems="10"
+        android:hint="Grade5"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g8"
+        android:layout_alignEnd="@+id/g6"
+        android:layout_alignLeft="@+id/g6"
+        android:layout_alignRight="@+id/g6"
+        android:layout_alignStart="@+id/g6"
+        android:layout_alignTop="@+id/c7"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/g9"
+        android:layout_alignEnd="@+id/g7"
+        android:layout_alignLeft="@+id/g7"
+        android:layout_alignRight="@+id/g7"
+        android:layout_alignStart="@+id/g7"
+        android:layout_alignTop="@+id/c8"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/g9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sub9csem1"
+        android:layout_alignEnd="@+id/g8"
+        android:layout_alignLeft="@+id/g8"
+        android:layout_alignRight="@+id/g8"
+        android:layout_alignStart="@+id/g8"
+        android:layout_alignTop="@+id/c9"
+        android:ems="10"
+        android:hint="Grade"
+        android:inputType="textCapCharacters"
+        android:shadowColor="@color/white"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ResultSem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/g9"
+        android:layout_alignRight="@+id/g9"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Result"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

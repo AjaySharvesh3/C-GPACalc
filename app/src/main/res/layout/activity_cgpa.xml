@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.raja.c_gpacalc.CGPAAct">
+
+
+
+        <TextView
+            android:id="@+id/sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER(S)"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"/>
+
+        <TextView
+            android:layout_below="@+id/sem"
+            android:id="@+id/sem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="SEMESTER 1"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <TextView
+        android:id="@+id/sem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEMESTER 2"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+        android:layout_below="@+id/sem1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/sem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEMESTER 3"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/sem2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEMESTER 4"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/sem3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/sem4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER 5"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/sem4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sem5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER 6"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/sem5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sem6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER 7"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/sem6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sem7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEMESTER 8"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/sem7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sem8" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA MARKS"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:paddingRight="60dp"
+        android:paddingTop="15dp"
+        android:id="@+id/gpamarks" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sem"
+        android:layout_alignRight="@+id/sem"
+        android:layout_below="@+id/sem8"
+        android:onClick="onButtonClick"
+        android:text="SUBMIT"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sem1num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/Mark1"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/sem2num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Mark2"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/sem3num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem4"
+        android:layout_alignLeft="@+id/sem2num"
+        android:layout_alignStart="@+id/sem2num"
+        android:ems="10"
+        android:hint="Mark3"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/sem4num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem5"
+        android:layout_alignLeft="@+id/sem3num"
+        android:layout_alignStart="@+id/sem3num"
+        android:ems="10"
+        android:hint="Mark4"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sem5num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem6"
+        android:layout_alignLeft="@+id/sem4num"
+        android:layout_alignStart="@+id/sem4num"
+        android:ems="10"
+        android:hint="Mark5"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sem6num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sem7"
+        android:layout_alignLeft="@+id/sem5num"
+        android:layout_alignStart="@+id/sem5num"
+        android:ems="10"
+        android:hint="Mark6"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sem7num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sem6num"
+        android:layout_alignStart="@+id/sem6num"
+        android:layout_below="@+id/sem6num"
+        android:ems="10"
+        android:hint="Mark7"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sem8num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sem7num"
+        android:layout_alignStart="@+id/sem7num"
+        android:layout_below="@+id/sem7"
+        android:ems="10"
+        android:hint="Mark8"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="textPersonName"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

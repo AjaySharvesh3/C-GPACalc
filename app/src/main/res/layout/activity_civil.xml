@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_gravity="center"
+    android:paddingTop="15dp"
+    tools:context="com.example.raja.c_gpacalc.Civil">
+
+    <Button
+        android:id="@+id/civsem1"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 1"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/civsem2"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 2"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:layout_below="@+id/civsem1"
+        android:layout_alignLeft="@+id/civsem1"
+        android:layout_alignStart="@+id/civsem1" />
+
+    <Button
+        android:id="@+id/civsem3"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 3"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="129dp"
+        android:layout_below="@+id/civsem2"
+        android:layout_alignLeft="@+id/civsem2"
+        android:layout_alignStart="@+id/civsem2" />
+
+    <Button
+        android:id="@+id/civsem4"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 4"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="184dp"
+        android:layout_below="@+id/civsem3"
+        android:layout_alignLeft="@+id/civsem3"
+        android:layout_alignStart="@+id/civsem3" />
+
+    <Button
+        android:id="@+id/civsem5"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 5"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="239dp"
+        android:layout_below="@+id/civsem4"
+        android:layout_alignLeft="@+id/civsem4"
+        android:layout_alignStart="@+id/civsem4" />
+
+    <Button
+        android:id="@+id/civsem6"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 6"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="296dp"
+        android:layout_below="@+id/civsem5"
+        android:layout_alignLeft="@+id/civsem5"
+        android:layout_alignStart="@+id/civsem5" />
+
+    <Button
+        android:id="@+id/civsem7"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 7"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="352dp"
+        android:layout_below="@+id/civsem6"
+        android:layout_alignLeft="@+id/civsem6"
+        android:layout_alignStart="@+id/civsem6" />
+
+    <Button
+        android:id="@+id/civsem8"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:text="SEMESTER 8"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="408dp"
+        android:layout_below="@+id/civsem7"
+        android:layout_alignLeft="@+id/civsem7"
+        android:layout_alignStart="@+id/civsem7" />
+
+</RelativeLayout>
